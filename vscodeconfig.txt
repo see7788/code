@@ -1,0 +1,13 @@
+{
+    "editor.mouseWheelZoom": true,
+    "window.zoomLevel": 3, //菜单栏大小
+    "php.validate.executablePath": "D:\\exelog\\phpstudy_pro\\Extensions\\php\\php7.3.9nts\\php.exe",
+    "typescript.inlayHints.parameterNames.enabled": "literals",
+    //"typescript.updateImportsOnFileMove.enabled": "always",
+    //"search.searchEditor.reusePriorSearchConfiguration": true,
+    // "typescript.preferences.includePackageJsonAutoImports": "off",
+    "remote-github.keystorePath": "kitchens@qq.com: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",
+    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltdLFwicGx1Z2luc1wiOltdLFwicmVjZW50Q29sb3JzXCI6W10sXCJmb3JtYXRXaWR0aFwiOlwiMjQwXCIsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4MjcsXCJoZWlnaHRcIjoxMTY5fSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "typescript.tsserver.enableTracing": true,
+}

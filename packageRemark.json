@@ -1,0 +1,96 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "kitchens <kitchens@qq.com>",
+  "dependencies": {
+    "lerna": "4.0.0"
+  },
+  "workspaces": [
+    "0/**",
+    "1/**"
+  ],
+  "scripts": {
+    "查看本地依赖关系": "yarn workspaces info ",
+    "initLerna": "lerna bootstrap --hoist",
+    "清理所有node_modules": "lerna clean",
+    "上传github+npm发布或者更新": "lerna publish",
+    "执行具体项目的脚本": "进入相应目录后，正常用yarn的正常命令//不要npm，npm的锁文件会导致依赖不实时更新",
+    "执行不同项目的相同脚本": "任何目录执行 lerna 项目的命令",
+    "a": "cross-conf-env echo %npm_package_name% %npm_package_version%",
+    "init": "lerna bootstrap --hoist",
+    "当前版本": "lerna info current version",
+    "z针对package安装": "yarn workspace mypackage add npmpackage",
+    "清理node_modules": "lerna clean",
+    "列出待publish项目": "lerna changed",
+    "发布项目": "lerna publish --force-publish $(ls packages/)",
+    "查看项目": "lerna list --json|lerna ll|lerna ls --ndjson",
+    "运行script": "lerna run 命令 --scope=mypackage|{mypackage1，mypackagen}",
+    "安装某依赖": "lerna add npmpackage --scope=mypackage  --exact=准确版本 --dev|--peer|--registry <url>",
+    "安装多项目依赖": "lerna add npmpackage packages/prefix-某前缀你  --exact=准确版本 --dev|--peer|--registry <url>",
+    "项目迁移到lerna": "lerna import",
+    "项目创建": "lerna create 目录名 || 目录名/目录名",
+    "查看代码变化": "lerna diff",
+    "查看版本": "lerna version"
+  },
+  "宝塔服务端": {
+    "pm2": [
+      "pm2 start xxx.js",
+      "pm2 reload  xxx"
+    ]
+  },
+  "本地包管理": [
+    "yarn global dir",
+    "yarn global list",
+    "npm config get prefix 获取全局路径",
+    "npm list -g --depth 0 查看全局包",
+    "yarn workspaces info 遇到奇葩错误，执行一下",
+    "yarn --unsafe-perm 提升权限安装",
+    "npm audit 查明特定的漏洞和缺陷",
+    "npm audit fix 检测项目依赖中的漏洞并自动安装需要更新的有漏洞的依赖"
+  ],
+  "remark": {
+    "ts-node/esm": "tsconfig.module不是CommonJS的时候",
+    "package要设置这个才可以跑ts-node": {
+      "type": "module"
+    },
+    "react": [
+      "yarn create react-app extends.react-app-typescript --template typescript",
+      "BROWSER=none 命令行参数关闭浏览器自动打开"
+    ],
+    "命令行编译原生模块全局安装": {
+      "windows-build-tools": "安装时候不要管界面，等待估计要半个小时，他进度条不动，c盘会多出4g左右",
+      "node-gyp": "编译原生模块",
+      "node-pre-gyp": "自动匹配语法版本的东西"
+    },
+    "electron-rebuild": "命令行编译原生模块",
+    "nodemon": "监听文件",
+    "concurrently": "命令行同时执行多个命令 ",
+    "wait-on": "命令行等待",
+    "lernaremark": "lerna init  换行 $ tree -a -C --dirsfirst -L 3 -I 'node_modules|.git' ",
+    "判断是否electron开发的exe": [
+      "Contents/Frameworks",
+      "asar e app.asar unpack 解开源码"
+    ],
+    "小乌龟exe": "TortoiseGit",
+    "git": {
+      "scripts": {
+        "pre-push": "npx git-scripts-pre-push"
+      }
+    },
+    "手机端开发": [
+      "uni-app",
+      "flutter",
+      "quasar"
+    ],
+    "安卓环境": [
+      "https://termux.com/",
+      "点图标进去，下拉几十厘米，点击下载apk安装",
+      "输入termux-setup-storage",
+      "pkg install nodejs",
+      "npm install finux  浏览目录的ui"
+    ]
+  }
+}

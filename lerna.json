@@ -1,0 +1,38 @@
+{
+  "npmClient": "yarn",
+  "version": "1.0.69",
+  "useWorkspaces": true,
+  "packages": [
+    "0/**",
+    "1/**"
+  ],
+  "ignoreChanges": [
+    "**/.production**/**",
+    "**/.development/**",
+    "**/*.md"
+  ],
+  "command": {
+    "init": {
+      "exact": true
+    },
+    "bootstrap": {
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
+    },
+    "version": {
+      "allowBranch": [
+        "master"
+      ],
+      "amend": false,
+      "conventionalCommits": true
+    },
+    "publish": {
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md"
+      ],
+      "message": "chore(release): publish %s"
+    }
+  }
+}
